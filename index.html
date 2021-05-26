@@ -6,44 +6,47 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 </head>
 <body>
-    <!-- instantiate background image for the page -->
-    <div id="home-bg">
-        <img src="./media/home-bg.jpg" alt="background image, night sky.">
-    </div>
-    <!-- instantiate the logo and link it to homepage -->
-    <header>
-        <a href="./" id="logo"></a>
-    </header>
-    <!-- create navbar and links -->
-    <nav>
-        <a href="./">Home</a>
-        <a href="./projects/">Projects</a>
-        <a href="./contact/">Contact</a>
+    <!-- Navbar -->
+    <nav id="navbar">
+        <span id="menu-button" class="material-icons dropdownbtn" onclick="myFunction()">menu</span>
+        <div id="navlinks">
+            <a href="./">Home</a></li>
+            <a href="./projects/">Projects</a></li>
+            <a href="./about/">About</a></li>
+            <a href="./contact/">Contact</a></li>
+        </div>
+        <!-- mobile dropdown navbar -->
+        <div class="dropdown-content" id="dropdown">
+            <a href="./">Home</a></li>
+            <a href="./projects/">Projects</a></li>
+            <a href="./about/">About</a></li>
+            <a href="./contact/">Contact</a></li>
+        </div>
     </nav>
-    <!-- create about me divs and content -->
-    <section class="aboutme">
-        <h1>Andrew Meyer</h1>
-        <h2>Software Development</h2>
-    </section>
-    <!-- create languages div and unordered list content -->
-    <section class="languages">
-        <h2>Languages</h2>
-        <ul>
-            <li>Python</li>
-            <li>HTML/CSS</li>
-            <li>Javascript/Phaser.js</li>
-            <li>C++/C#</li>
-            <li>Ruby</li>
-        </ul>
-    </section>
-    <!-- instantiate footer with social media links-->
-    <footer>
-        <div id="footerbackground"></div>
-        <a href="https://www.facebook.com/CreatureLabs03" id="facebookicon" target="_blank"></a>
-        <a href="https://twitter.com/CreatureLabs03" id="twittericon" target="_blank"></a>
-        <a href="https://www.instagram.com/creaturelabs03" id="instagramicon" target="_blank"></a>
-    </footer>
+    <!-- end Navbar -->
+    <!-- background -->
+    <div class="background"></div>
+    
+    <!-- dropdown menu script -->
+    <script>
+    //  When the user clicks on the button, 
+    // toggle between hiding and showing the dropdown content 
+        function myFunction() {
+          document.getElementById("dropdown").classList.toggle("show");
+        }
+        
+        // Close the dropdown if the user clicks on the menu button
+        window.onclick = function(e) {
+            if (!e.target.matches('.dropdownbtn')) {
+            var dropdown = document.getElementById("dropdown");
+                if (dropdown.classList.contains('show')) {
+                myDropdown.classList.remove('show');
+                }
+            }
+        }
+    </script>
 </body>
 </html> 

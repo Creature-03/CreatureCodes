@@ -4,6 +4,8 @@
 
 body{
     margin: 0;
+    display: inline-flex;
+    justify-content: center;
 }
 /* show class used by js to toggle mobile dropdown nav */
 .show{
@@ -29,6 +31,7 @@ body{
     top: 5.8vh;
     right: 0;
     background-color: #1b1c1e;
+    border-radius: 4px;
     width: 50vw;
     height: fit-content;
     z-index: 1;
@@ -96,7 +99,26 @@ body{
 
 .background{
     background: url(../media/greyscale-trees.jpg) center center no-repeat; 
-    position: relative;
+    position: absolute;
     height: 100vh;
     width: 100vw;
+    z-index: -1;
+}
+
+.logo{
+    display: flex;
+    flex-flow: column;
+    position: absolute;
+    top: 10vh;
+    text-align: center;
+}
+.logo h1{
+    color: rgb(252, 251, 224);
+    font-size: calc(64px + 3vw);
+    text-shadow: 1px 1px black;
+}
+.logo p{
+    color: rgb(211, 163, 100);
+    font-size: calc(16px + 0.5vw);
+    text-shadow: 1px 1px black;
 }

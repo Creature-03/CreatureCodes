@@ -1,7 +1,6 @@
 *{
     font-family: sans-serif;
 }
-
 body{
     margin: 0;
     display: inline-flex;
@@ -9,6 +8,8 @@ body{
     width: 100vw;
     height: fit-content
 }
+
+/* navbar */
 /* show class used by js to toggle mobile dropdown nav */
 .show{
     display: flex !important;
@@ -30,7 +31,6 @@ body{
     padding-right: 8%;
     color: rgb(252, 251, 224);
 }
-
 .dropdown-content{
     display: none;
     flex-flow: column;
@@ -51,7 +51,9 @@ body{
     text-align: left;
     padding: 8%;
 }
+/* end navbar */
 
+/* media quaries */
 /* smartphone display */
 @media screen and (min-width: 0px) and (max-width: 479.8px){
     #navbar{
@@ -99,16 +101,20 @@ body{
     }
 }
 
+/* mid-range display to prevent text overflow from some proeject names */
 @media screen and (min-width: 560px) and (max-width: 1000px){
     .project{
         width: 40%;
     }
 }
+
+/* extended smartphone display to prevent text overflow from some project names */
 @media screen and (min-width: 0px) and (max-width: 559.8px){
     .project{
         width: 100%
     }
 }
+/* end media quaries */
 
 #navlinks a{
     display: inline-flex;
@@ -119,12 +125,10 @@ body{
     font-size: calc(24px + 0.3vw);
     font-style: italic;
 }
-
 #navlinks a:hover{
     color: rgb(219, 166, 97);
     transition-duration: 0.15s;
 }
-
 .background{
     background: url(../media/greyscale-trees.jpg) center center no-repeat; 
     position: fixed;
@@ -132,7 +136,6 @@ body{
     width: 100vw;
     z-index: -1;
 }
-
 .logo{
     display: flex;
     flex-flow: column;
@@ -208,3 +211,38 @@ body{
     padding: 2%;
     border-radius: 25px;
 }
+/* end about page */
+
+/* contact page */
+.contact-info{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 30vh;
+}
+.contact-info h3{
+    color:rgb(233, 154, 52);
+    font-size: calc(24px + 0.2vw);
+    font-style: italic;
+    text-shadow: 1px 1px black;
+}
+.contact-info hr{
+    width: 110%;
+    margin-top: -5%;
+}
+.contact-info p{
+    color: rgb(238, 215, 153);
+    font-size: calc(20px + 0.2vw);
+    text-shadow: 0.5px 0.5px black;
+}
+.social-media{
+    display: flex;
+    position: absolute;
+    top: 60vh;
+
+}
+.social-media a{
+    padding: 20%;
+    color: ghostwhite;
+}
+/* end contact page */

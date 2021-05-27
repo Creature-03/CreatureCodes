@@ -69,6 +69,12 @@ body{
         display: none;
     }
 
+    .projects-container{
+        position: absolute;
+    }
+    .project{
+        width: 100%;
+    }
 
 }
 
@@ -86,6 +92,16 @@ body{
         display: inline-flex;
         justify-content: center;
         align-items: center;
+    }
+
+    .project{
+        width: 23%;
+    }
+}
+
+@media screen and (min-width: 480px) and (max-width: 680px){
+    .project{
+        width: 40%;
     }
 }
 
@@ -145,7 +161,6 @@ body{
 .project{
     display: flex;
     flex-flow: column;
-    width: 23%;
     height: fit-content;
     margin: 5%;
     background-color: rgba(104, 89, 71, 0.85);

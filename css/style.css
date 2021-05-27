@@ -140,10 +140,16 @@ body{
     position: absolute;
     top: 10vh;
     text-align: center;
+    width: 90%;
 }
 .logo h1{
     color: rgb(252, 251, 224);
     font-size: calc(64px + 3vw);
+    text-shadow: 1px 1px black;
+}
+.logo h2{
+    color: rgb(218, 216, 168);
+    font-size: calc(24px + 3vw);
     text-shadow: 1px 1px black;
 }
 .logo p{

@@ -133,7 +133,6 @@ body{
     z-index: -1;
 }
 
-/* home page */
 .logo{
     display: flex;
     flex-flow: column;
@@ -152,12 +151,16 @@ body{
     font-size: calc(24px + 3vw);
     text-shadow: 1px 1px black;
 }
+.logo h3{
+    color: rgb(187, 160, 87);
+    font-size: calc(16px + 0.1vw);
+    text-shadow: 1px 1px black;
+}
 .logo p{
     color: rgb(211, 163, 100);
     font-size: calc(16px + 0.5vw);
     text-shadow: 1px 1px black;
 }
-/* end home page */
 
 /* Projects page */
 .projects-container{
@@ -194,4 +197,14 @@ body{
     font-size: calc(18px + 0.2vw);
     color: rgb(187, 160, 87);
     text-shadow: 1px 1px black;
+}
+/* end projects page */
+
+/* about page */
+.about-container{
+    background-color: rgba(104, 89, 71, 0.85);
+    width: 60%;
+    margin: auto;
+    padding: 2%;
+    border-radius: 25px;
 }

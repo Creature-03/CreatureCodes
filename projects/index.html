@@ -4,45 +4,87 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>projects</title>
+    <title>Home</title>
     <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 </head>
 <body>
-    <!-- instantiate background image for the page -->
-    <div id="projects-bg">
-        <img src="../media/projects-bg.jpg" alt="background image, night sky.">
-    </div>
-    <!-- instantiate logo image and link it to homepage -->
-    <header>
-        <a href="../" id="logo"></a>
-    </header>
-    <!-- create navbar and links -->
-    <nav>
-        <a href="../">Home</a>
-        <a href="./">Projects</a>
-        <a href="../contact/">Contact</a>
+    <!-- Navbar -->
+    <nav id="navbar">
+        <span id="menu-button" class="material-icons dropdownbtn" onclick="myFunction()">menu</span>
+        <div id="navlinks">
+            <a href="../">Home</a></li>
+            <a href="./">Projects</a></li>
+            <a href="../about/">About</a></li>
+            <a href="../contact/">Contact</a></li>
+        </div>
+        <!-- mobile dropdown navbar -->
+        <div class="dropdown-content" id="dropdown">
+            <a href="../">Home</a></li>
+            <a href="./">Projects</a></li>
+            <a href="../about/">About</a></li>
+            <a href="../contact/">Contact</a></li>
+        </div>
     </nav>
-    <!-- create projects div and unordered list of links -->
-    <section class="projectslist">
-        <h1>Projects</h1>
-        <ul>
-            <li><a href="https://github.com/Creature-03/Website-theme-Wave" target ="_blank">Website Theme: Wave #HTML #CSS</a></li>
-            <br><li><a href="https://github.com/Creature-03/Bitwise-WFB-Final-Project" target="_blank">Bitwise WFB Final Project  #HTML #CSS</a></li>
-            <br><li><a href="https://github.com/Creature-03/IRB_Tic_Tac_Toe" target="_blank">IRB Tic Tac Toe #Ruby</a></li>
-            <br><li><a href="https://github.com/Creature-03/Ruby_Bubble_Sort" target="_blank">Bubble Sort #Ruby</a></li>
-            <br><li><a href="https://github.com/Creature-03/Reddit-Bot-Customizable" target="_blank">Reddit Bot Customizeable #Python</a></li>
-            <br><li><a href="https://github.com/Creature-03/Simple_Stack_Structure" target="_blank">Simple Stack Structure #Python</a></li>
-            <br><li><a href="https://github.com/Creature-03/Simple_Queue_Structure" target="_blank">Simple Queue Structure #Python</a></li>
-            <br><li><a href="https://github.com/Creature-03/Scrabble_project" target="_blank">Scrabble #Python</a></li>
-            <br><li><a href="https://github.com/Creature-03/Shipping_project" target="_blank">Shipping Calculator #Python</a></li>
-        </ul>
-    </section>
-    <!-- instantiate footer with social media links-->
-    <footer>
-        <div id="footerbackground"></div>
-        <a href="https://www.facebook.com/CreatureLabs03" id="facebookicon" target="_blank"></a>
-        <a href="https://twitter.com/CreatureLabs03" id="twittericon" target="_blank"></a>
-        <a href="https://www.instagram.com/creaturelabs03" id="instagramicon" target="_blank"></a>
-    </footer>
+    <!-- end Navbar -->
+    <!-- background -->
+    <div class="background"></div>
+
+    <div class="logo">
+        <h2>Coding projects I've created:</h2>
+    </div>
+    
+    <!-- projects links -->
+    <div class="projects-container">
+        <a href="https://github.com/Creature-03/Website-theme-Wave" target="_blank" class="project">
+            <h2>Website template: Wave</h2>
+            <p>A website template themed with a wave pattern as its focal point.</p>
+            <p>#HTML #CSS</p>
+        </a>
+        <a href="https://github.com/Creature-03/Bitwise-WFB-Final-Project" target="_blank" class="project">
+            <h2>Bitwise WFB Final Project</h2>
+            <p>My final project website design for the Bitwise Workforce Training Websites For Beginners course.</p>
+            <p>#HTML #CSS</p>
+        </a>
+        <a href="https://github.com/Creature-03?tab=repositories" target="_blank" class="project">
+            <h2>IRB Tic-Tac-Toe game</h2>
+            <p>An interactive game of Tic-Tac-Toe for two players using the IRB terminal.</p>
+            <p>#Ruby</p>
+        </a>
+        <a href="https://github.com/Creature-03/Ruby_Bubble_Sort" target="_blank" class="project">
+            <h2>Ruby Bubble Sort function</h2>
+            <p>A bubble sort function in ruby to loop through a list and resort the list in ascending order.</p>
+            <p>#Ruby</p>
+        </a>
+        <a href="https://github.com/Creature-03/Reddit-Bot-Customizable" target="_blank" class="project">
+            <h2>Customizable Reddit bot</h2>
+            <p>A reddit bot framework using praw that can sort through comments on custom subreddits for key phrases and respond to them.</p>
+            <p>#Python</p>
+        </a>
+        <a href="https://github.com/Creature-03/Simple_Stack_Structure" target="_blank" class="project">
+            <h2>Python Stack structure</h2>
+            <p>Stack structure for data management using Node.</p>
+            <p>#Python</p>
+        </a>
+        <a href="https://github.com/Creature-03/Simple_Queue_Structure" target="_blank" class="project">
+            <h2>Python Queue structure</h2>
+            <p>Queue structure for data management using Node.</p>
+            <p>#Python</p>
+        </a>
+        <a href="https://github.com/Creature-03/Scrabble_project" target="_blank" class="project">
+            <h2>Scrabble game</h2>
+            <p>Scrabble game scoring system backend structure, currently has no UI, can be used in terminal.</p>
+            <p>#Python</p>
+        </a>
+        <a href="https://github.com/Creature-03/Shipping_project" target="_blank" class="project">
+            <h2>Shipping calculator</h2>
+            <p>Calculates the cheapest shipping method out of 3 options, options and prices can be adjusted in Shipping_project.py, currently has no UI, can be operated in terminal.</p>
+            <p>#Python</p>
+        </a>
+    </div>
+    <!-- end projects links -->
+    
+    <!-- dropdown menu script -->
+    <script src="../js/dropdown.js"></script>
 </body>
-</html>
+</html> 

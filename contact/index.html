@@ -4,54 +4,50 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>contact</title>
+    <title>Home</title>
     <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 </head>
 <body>
-    <!-- instantiate background image for page -->
-    <div id="contact-bg">
-        <img src="../media/contact-bg.jpg" alt="background image, night sky.">
-    </div>
-    <!-- instantiate logo and link to homepage -->
-    <header>
-        <a href="../" id="logo"></a>
-    </header>
-    <!-- create navbar and links -->
-    <nav>
-        <a href="../">Home</a>
-        <a href="../projects/">Projects</a>
-        <a href="./">Contact</a>
+    <!-- Navbar -->
+    <nav id="navbar">
+        <span id="menu-button" class="material-icons dropdownbtn" onclick="myFunction()">menu</span>
+        <div id="navlinks">
+            <a href="../">Home</a></li>
+            <a href="../projects/">Projects</a></li>
+            <a href="../about/">About</a></li>
+            <a href="./">Contact</a></li>
+        </div>
+        <!-- mobile dropdown navbar -->
+        <div class="dropdown-content" id="dropdown">
+            <a href="../">Home</a></li>
+            <a href="../projects/">Projects</a></li>
+            <a href="../about/">About</a></li>
+            <a href="./">Contact</a></li>
+        </div>
     </nav>
-    <!-- Contact form, currently nonfunctional and without backend support -->
-    <!-- <div class="formcontainer">
-        <form action="../confirmation/">
-            <label for="fname">First Name</label>
-            <br>
-            <input type="text" id="fname" name="firstname" placeholder="First name">
-            <br>
-            <label for="lname">Last Name</label>
-            <br>
-            <input type="text" id="lname" name="lastname" placeholder="Last name">
-            <br>
-            <label for="message">Message</label>
-            <br>
-            <textarea id="message" name="message" placeholder="Your message" style="height:200px"></textarea>
-            <br>
-            <input type="submit" value="Submit">
-        </form>
-    </div> -->
+    <!-- end Navbar -->
+    <!-- background -->
+    <div class="background"></div>
 
-    <!-- contact page using emailto:  -->
-    <div id="contactcontainer">
-        <a href="mailto:andrew@creaturecodes.com?subject=Site Contact" class="contactbutton">Email me</a>
+    <div class="logo">
+        <h2>Contact</h2>
     </div>
 
-    <!-- instantiate footer with social media links-->
-    <footer>
-        <div id="footerbackground"></div>
-        <a href="https://www.facebook.com/CreatureLabs03" id="facebookicon" target="_blank"></a>
-        <a href="https://twitter.com/CreatureLabs03" id="twittericon" target="_blank"></a>
-        <a href="https://www.instagram.com/creaturelabs03" id="instagramicon" target="_blank"></a>
-    </footer>
+    <div class="contact-info">
+        <h3>
+            Let's chat
+        </h3>
+        <hr>
+        <p>email: andrew@creaturecodes.com</p>
+        <p>phone: +1(559)581-5523</p>
+    </div>
+    <div class="social-media">
+        <a href="https://www.facebook.com/CreatureLabs03"><span class="material-icons">facebook</span></a>
+        <a href="mailto:andrew@creaturecodes.com"><span class="material-icons">mail</span></a>
+    </div>
+    
+    <!-- dropdown menu script -->
+    <script src="../js/dropdown.js"></script>
 </body>
-</html>
+</html> 

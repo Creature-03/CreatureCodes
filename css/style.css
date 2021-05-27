@@ -155,9 +155,9 @@ body{
     text-shadow: 1px 1px black;
 }
 .logo h3{
-    color: rgb(187, 160, 87);
+    color: rgb(248, 228, 192);
     font-size: calc(16px + 0.1vw);
-    text-shadow: 1px 1px black;
+    text-shadow: 0.3px 0.3px black;
 }
 .logo p{
     color: rgb(211, 163, 100);
@@ -192,13 +192,13 @@ body{
 .project h2{
     margin: 5%;
     font-size: calc(24px + 0.2vw);
-    color:rgb(185, 124, 44);
+    color:rgb(250, 190, 111);
     text-shadow: 1px 1px black;
 }
 .project p{
     margin: 5%;
     font-size: calc(18px + 0.2vw);
-    color: rgb(187, 160, 87);
+    color: rgb(252, 240, 218);
     text-shadow: 1px 1px black;
 }
 /* end projects page */
